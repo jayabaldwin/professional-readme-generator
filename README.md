@@ -1,10 +1,11 @@
 
-  # README.md dynamic generator
+  # dljfldj
 
 // badge for that license is added near the top of the README
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
-  Dynamically generates readme.md file off of prompts to the user
+  dlksjfl
 
   ## Table of Contents
   - [Installation](#installation)
@@ -16,12 +17,12 @@
 
   ## Installation
   ### Command to install dependencies:
-  npm inquirer@8.2.4
+  fuhdf
 
   
   ## Usage
   To use this application:
-  change this question, its confusing
+  ldskjf
 
 
   ## License
@@ -31,15 +32,14 @@
 
   ## Contributing
   Product contribution guidelines are as follows:
-  contributions are welcome
+  fjkldsf
 
   ## Tests
   ### Command to run tests:
-  node blah blah
+  dlkjf
 
 
   ## Questions
-  - My GitHub Username is: [@jayabaldwin](https://github.com/jayabaldwin)
-  - My email: jayastarrbaldwin@gmail.com
-
-  To reach out to me with additional questions: via email;
+  To reach out to me with additional questions: jlksdf;
+  - My GitHub Username is: [@sdkjhfsd](https://github.com/sdkjhfsd)
+  - My email: 
