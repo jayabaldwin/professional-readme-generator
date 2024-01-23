@@ -33,7 +33,7 @@ function renderLicenseBadge(license) {
       return licenseType[0].badge;
     case 'APACHE 2.0':
       return licenseType[1].badge;
-    case 'GPL 3.0':
+    case 'Boost Software 1.0':
       return licenseType[2].badge;
     case 'BSD 3':
       return licenseType[3].badge;
@@ -49,7 +49,7 @@ function renderLicenseLink(license) {
       return licenseType[0].link;
     case 'APACHE 2.0':
       return licenseType[1].link;
-    case 'GPL 3.0':
+    case 'Boost Software 1.0':
       return licenseType[2].link;
     case 'BSD 3':
       return licenseType[3].link;
