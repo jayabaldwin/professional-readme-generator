@@ -1,10 +1,11 @@
 
+  <br>
   <h1 align="center">Professional README.md Generator</h1>
 
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
+  <div align="center">![License]</div>
 
   ## Description
-  A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer Package
+  The aim of this project was to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package and utilising node.js
 
   ## Table of Contents
   - [Installation](#installation)
@@ -15,28 +16,31 @@
   - [Questions](#questions)
 
   ## Installation
-  ### Command to install dependencies:
+  #### Command to install dependencies:
   `
-  npm install inquirer@8.2.4
+  npm install Inquirer@8.2.4
   `
 
   ## Usage
-  To use this application:
-  Refer to Inquirer documentation
+  This repository is currently a work in progress, although it still holds the ability to generate a basic markdown file
 
   ## License
-  The application is covered under the following license:  ![APACHE 2.0](https://opensource.org/licenses/Apache-2.0)
+  The application is covered under the following license: ![MIT License]
 
   ## Contributing
-  The repository is not accepting contributions at this time
+  I will be accepting contributions to this repository at this time.
+  <br>
+  If you would like to be contributed you're most welcome to fork a branch and clone to your local computer, please send back a detailed description in any merge requests you may make
 
   ## Tests
-  ### Command to run tests:
+  #### To run tests use the following command:
   `
   node index.js
   `
 
   ## Questions
-  To reach out to me with additional questions: Yes, please reach out via email if you have questions;
-  // Find me on GitHub: [@jayabaldwin](https://github.com/jayabaldwin)
-  // Email me: jayastarrbaldwin@gmail.com
+  Questions about this repository? My best point of contact is via Email 
+  <br>
+  If you'd like to view more of my work in GitHub, my profile is: [undefined](https://github.com/undefined) 
+  <br>
+  Otherwise my email is [jayastarrbaldwin@gmail.com](mailto:jayastarrbaldwin@gmail.com).
