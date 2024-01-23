@@ -53,10 +53,9 @@ function generateMarkdown(data) {
 
 
   ## Questions
+  To reach out to me with additional questions: ${data.questions};
   - My GitHub Username is: [@${data.github}](https://github.com/${data.github})
   - My email: ${data.email}
-
-  To reach out to me with additional questions: ${data.questions};
 `;
 }
 

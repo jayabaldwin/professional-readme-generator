@@ -1,10 +1,10 @@
 
-  # Weather Dashboard
+  # README.md dynamic generator
 
 // badge for that license is added near the top of the README
 
   ## Description
-  5-Day Forecast utilising Open Weather Map API'
+  Dynamically generates readme.md file off of prompts to the user
 
   ## Table of Contents
   - [Installation](#installation)
@@ -16,13 +16,12 @@
 
   ## Installation
   ### Command to install dependencies:
-  ```
-  npm bulma
-  ```
+  npm inquirer@8.2.4
+
   
   ## Usage
   To use this application:
-  not applicable
+  change this question, its confusing
 
 
   ## License
@@ -34,15 +33,13 @@
   Product contribution guidelines are as follows:
   contributions are welcome
 
-
   ## Tests
   ### Command to run tests:
-  ```
-    not applicable
-  ```
+  node blah blah
+
 
   ## Questions
-  - My GitHub Username is: [@Jaya](https://github.com/Jaya)
+  - My GitHub Username is: [@jayabaldwin](https://github.com/jayabaldwin)
   - My email: jayastarrbaldwin@gmail.com
 
-  To reach out to me with additional questions: email me ;
+  To reach out to me with additional questions: via email;
