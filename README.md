@@ -1,10 +1,10 @@
 
-  # README.md dynamic generator
+  <h1 align="center">Professional README.md Generator</h1>
 
-// badge for that license is added near the top of the README
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
 
   ## Description
-  Dynamically generates readme.md file off of prompts to the user
+  A command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer Package
 
   ## Table of Contents
   - [Installation](#installation)
@@ -16,30 +16,27 @@
 
   ## Installation
   ### Command to install dependencies:
-  npm inquirer@8.2.4
+  `
+  npm install inquirer@8.2.4
+  `
 
-  
   ## Usage
   To use this application:
-  change this question, its confusing
-
+  Refer to Inquirer documentation
 
   ## License
-//   notice is added that explains which license the application is covered under
-  MIT License
-
+  The application is covered under the following license:  ![APACHE 2.0](https://opensource.org/licenses/Apache-2.0)
 
   ## Contributing
-  Product contribution guidelines are as follows:
-  contributions are welcome
+  The repository is not accepting contributions at this time
 
   ## Tests
   ### Command to run tests:
-  node blah blah
-
+  `
+  node index.js
+  `
 
   ## Questions
-  - My GitHub Username is: [@jayabaldwin](https://github.com/jayabaldwin)
-  - My email: jayastarrbaldwin@gmail.com
-
-  To reach out to me with additional questions: via email;
+  To reach out to me with additional questions: Yes, please reach out via email if you have questions;
+  // Find me on GitHub: [@jayabaldwin](https://github.com/jayabaldwin)
+  // Email me: jayastarrbaldwin@gmail.com

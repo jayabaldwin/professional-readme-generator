@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generatedmarkdown.js')
@@ -29,7 +29,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: "Select a license for your application from the following list",
-        choices: ['MIT License', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'No License Required'],
+        choices: ['MIT License', 'APACHE 2.0', 'Boost Software 1.0', 'BSD 3', 'None'],
     },
     {
         type: 'input',
@@ -59,21 +59,21 @@ const questions = [
 ];
 
 
-// TODO: Create a function to write README file
+// Write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         err ? console.log(err) : console.log('Successfully created README.md!')
     });
 }
 
-// TODO: Create a function to initialize app
+// Initialize app
 function init() {
     // prompt inquirer questions
     inquirer.prompt(questions)
         .then((answers) => {
             // pass inquirer answers into generate markdown 
             let markdownContent = generateMarkdown(answers);
-            // pass both answers and markdown content to writeToFile
+            // pass markdown content to writeToFile
             writeToFile('README.md', markdownContent);
         })
         .catch((err) => console.error(err));
