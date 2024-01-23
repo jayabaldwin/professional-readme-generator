@@ -77,7 +77,7 @@ function generateMarkdown(data) {
   return `
   <h1 align="center">${data.title}</h1>
 
-  [![License]${licenseBadge}]
+  <div align="center">![License]${licenseBadge}</div>
 
   ## Description
   ${data.description}
