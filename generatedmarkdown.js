@@ -12,8 +12,51 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
 
+// badge for that license is added near the top of the README
+
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
+  ## Installation
+  To install this application:
+  ${data.installation}
+
+ 
+  ## Usage
+  To use this application:
+  ${data.usage}
+
+
+  ## License
+//   notice is added that explains which license the application is covered under
+  ${data.license}
+
+
+  ## Contributing
+  Product contribution guidelines are as follows:
+  ${data.contribution}
+
+
+  ## Tests
+  ${data.instructions}
+
+
+  ## Questions
+  - My GitHub Username is: [@${data.github}](https://github.com/${data.github})
+  - My email: ${data.email}
+
+  To reach out to me with additional questions: ${data.questions};
 `;
 }
 
