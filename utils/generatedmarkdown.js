@@ -102,7 +102,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${licenseSection}![${data.license}]${licenseLink}
+  ${licenseSection}[${data.license}]${licenseLink}
 
   ## Contributing
   ${data.contributionQuestion} be accepting contributions to this repository at this time.

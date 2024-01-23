@@ -26,7 +26,7 @@
   This repository is currently a work in progress, although it still holds the ability to generate a basic markdown file
 
   ## License
-  The application is covered under the following license: ![MIT](https://opensource.org/licenses/MIT)
+  The application is covered under the following license: [MIT](https://opensource.org/licenses/MIT)
 
   ## Contributing
   I will not be accepting contributions to this repository at this time.
