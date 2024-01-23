@@ -117,7 +117,7 @@ function generateMarkdown(data) {
   ## Questions
   Questions about this repository? My best point of contact is via ${data.questions} 
   <br>
-  If you'd like to view more of my work in GitHub, my profile is: [${data.username}](https://github.com/${data.username}) 
+  If you'd like to view more of my work in GitHub, my profile is: [${data.github}](https://github.com/${data.github}) 
   <br>
   Otherwise my email is [${data.email}](mailto:${data.email}).
 `;
