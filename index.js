@@ -44,17 +44,24 @@ const questions = [
     {
         type: 'input',
         name: 'usage',
-        message: "What does the user need to know about navigating this repository?",
+        message: "What does the user need to know about this repository?",
+    },
+    {
+        type: 'list',
+        name: 'contributionQuestion',
+        message: "Will you be accepting contributions to the repo?",
+        choices: ['I will', 'I will not']
     },
     {
         type: 'input',
         name: 'contribution',
-        message: "What does the user need to know about contributing to the repo?",
+        message: "If you answered 'I will' to the previous question. Please specify any guidelines you have with contribution, if not, leave blank",
     },
     {
-        type: 'input',
+        type: 'list',
         name: 'questions',
-        message: "How would you like users to reachout with questions regarding this application?",
+        message: "Where would you like users to reachout with questions regarding this application?",
+        choices: ['GitHub', 'Email']
     }
 ];
 

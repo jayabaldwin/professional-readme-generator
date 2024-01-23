@@ -75,6 +75,7 @@ function generateMarkdown(data) {
   const licenseSection = renderLicenseSection(data.license);
 
   return `
+  <br>
   <h1 align="center">${data.title}</h1>
 
   <div align="center">![License]${licenseBadge}</div>
@@ -91,30 +92,34 @@ function generateMarkdown(data) {
   - [Questions](#questions)
 
   ## Installation
-  ### Command to install dependencies:
+  #### Command to install dependencies:
   \`
   ${data.installation}
   \`
 
   ## Usage
-  To use this application:
   ${data.usage}
 
   ## License
-  ${licenseSection} ![${data.license}]${licenseLink}
+  ${licenseSection}![${data.license}]${licenseLink}
 
   ## Contributing
+  ${data.contributionQuestion} be accepting contributions to this repository at this time.
+  <br>
   ${data.contribution}
 
   ## Tests
-  ### Command to run tests:
+  #### To run tests use the following command:
   \`
   ${data.tests}
   \`
 
   ## Questions
-  Find me on GitHub: [@${data.github}](https://github.com/${data.github})
-  Email me here: ${data.email}
+  Questions about this repository? My best point of contact is via ${data.questions} 
+  <br>
+  If you'd like to view more of my work in GitHub, my profile is: [${data.username}](https://github.com/${data.username}) 
+  <br>
+  Otherwise my email is [${data.email}](mailto:${data.email}).
 `;
 }
 
