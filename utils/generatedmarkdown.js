@@ -1,7 +1,7 @@
 const licenseType = [
   {
     type: 'MIT',
-    badge: '(https://img.shields.io/badge/License-MIT-yellow.svg)',
+    badge: 'License-MIT-yellow.svg',
     link: '(https://opensource.org/licenses/MIT)',
   },
   {
@@ -11,7 +11,7 @@ const licenseType = [
   },
   {
     type: 'Boost Software 1.0',
-    badge: '(https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)',
+    badge: 'License-Boost_1.0-lightblue.svg',
     link: '(https://www.boost.org/LICENSE_1_0.txt)',
   },
   {
@@ -78,10 +78,11 @@ function generateMarkdown(data) {
   <br>
   <h1 align="center">${data.title}</h1>
 
-  <div align="center">![License]${licenseBadge}</div>
-
   ## Description
   ${data.description}
+
+  ![Badge](https://img.shields.io/badge/${licenseBadge})
+ 
 
   ## Table of Contents
   - [Installation](#installation)
