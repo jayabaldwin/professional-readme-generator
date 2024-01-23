@@ -1,7 +1,7 @@
 const licenseType = [
   {
     type: 'MIT',
-    badge: '(https://img.shields.io/badge/License-MIT-yellow.svg)',
+    badge: 'License-MIT-yellow.svg',
     link: '(https://opensource.org/licenses/MIT)',
   },
   {
@@ -11,7 +11,7 @@ const licenseType = [
   },
   {
     type: 'Boost Software 1.0',
-    badge: '(https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)',
+    badge: 'License-Boost_1.0-lightblue.svg',
     link: '(https://www.boost.org/LICENSE_1_0.txt)',
   },
   {
@@ -33,7 +33,7 @@ function renderLicenseBadge(license) {
       return licenseType[0].badge;
     case 'APACHE 2.0':
       return licenseType[1].badge;
-    case 'GPL 3.0':
+    case 'Boost Software 1.0':
       return licenseType[2].badge;
     case 'BSD 3':
       return licenseType[3].badge;
@@ -49,7 +49,7 @@ function renderLicenseLink(license) {
       return licenseType[0].link;
     case 'APACHE 2.0':
       return licenseType[1].link;
-    case 'GPL 3.0':
+    case 'Boost Software 1.0':
       return licenseType[2].link;
     case 'BSD 3':
       return licenseType[3].link;
@@ -78,10 +78,11 @@ function generateMarkdown(data) {
   <br>
   <h1 align="center">${data.title}</h1>
 
-  <div align="center">![License]${licenseBadge}</div>
-
   ## Description
   ${data.description}
+
+  ![Badge](https://img.shields.io/badge/${licenseBadge})
+ 
 
   ## Table of Contents
   - [Installation](#installation)
@@ -101,7 +102,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-  ${licenseSection}![${data.license}]${licenseLink}
+  ${licenseSection}[${data.license}]${licenseLink}
 
   ## Contributing
   ${data.contributionQuestion} be accepting contributions to this repository at this time.
@@ -117,7 +118,7 @@ function generateMarkdown(data) {
   ## Questions
   Questions about this repository? My best point of contact is via ${data.questions} 
   <br>
-  If you'd like to view more of my work in GitHub, my profile is: [${data.username}](https://github.com/${data.username}) 
+  If you'd like to view more of my work in GitHub, my profile is: [${data.github}](https://github.com/${data.github}) 
   <br>
   Otherwise my email is [${data.email}](mailto:${data.email}).
 `;

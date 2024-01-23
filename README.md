@@ -2,10 +2,11 @@
   <br>
   <h1 align="center">Professional README.md Generator</h1>
 
-  <div align="center">![License]</div>
-
   ## Description
-  The aim of this project was to create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package and utilising node.js
+  A command-line application that dynamically generates a professional README.md from a user's input. Built using Node.js and the Inquirer npm package.
+
+  ![Badge](https://img.shields.io/badge/License-MIT-yellow.svg)
+ 
 
   ## Table of Contents
   - [Installation](#installation)
@@ -18,19 +19,19 @@
   ## Installation
   #### Command to install dependencies:
   `
-  npm install Inquirer@8.2.4
+  npm i Inquirer@8.2.4
   `
 
   ## Usage
   This repository is currently a work in progress, although it still holds the ability to generate a basic markdown file
 
   ## License
-  The application is covered under the following license: ![MIT License]
+  The application is covered under the following license: [MIT](https://opensource.org/licenses/MIT)
 
   ## Contributing
-  I will be accepting contributions to this repository at this time.
+  I will not be accepting contributions to this repository at this time.
   <br>
-  If you would like to be contributed you're most welcome to fork a branch and clone to your local computer, please send back a detailed description in any merge requests you may make
+  
 
   ## Tests
   #### To run tests use the following command:
@@ -41,6 +42,6 @@
   ## Questions
   Questions about this repository? My best point of contact is via Email 
   <br>
-  If you'd like to view more of my work in GitHub, my profile is: [undefined](https://github.com/undefined) 
+  If you'd like to view more of my work in GitHub, my profile is: [jayabaldwin](https://github.com/jayabaldwin) 
   <br>
   Otherwise my email is [jayastarrbaldwin@gmail.com](mailto:jayastarrbaldwin@gmail.com).
