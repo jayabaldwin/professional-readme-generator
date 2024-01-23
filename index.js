@@ -1,71 +1,84 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./generatedmarkdown.js')
+const generateMarkdown = require('./utils/generatedmarkdown.js')
 
 // TODO: Create an array of questions for user input
+// const questions = [
+//     "What is the title of your project?",
+//     "Provide a short description",
+//     "Provide instructions of how a user can install your application",
+//     "How can users navigate and use your application?",
+//     "Select a license for your application from the following list",
+//     "Provide guidelines on how contributors can assist in this project, if you'd like it to be open-source",
+//     "Give users explicit instructions on how to run all necessary tests and supply all necessary commands.",
+//     "What is your gitHub username?",
+//     "What is your email address",
+//     "How would you like users to reachout with questions regarding this application?"
+// ];
+
 const questions = [
+    "What is your GitHub username?",
+    "What is your email address?",
     "What is the title of your project?",
-    "Provide a description",
-    "Provide instructions of how a user can install your application",
-    "How can users navigate and use your application?",
+    "Please write a short description of your project.",
     "Select a license for your application from the following list",
-    "Provide guidelines on how contributors can assist in this project, if you'd like it to be open-source",
-    "Give users explicit instructions on how to run all necessary tests and supply all necessary commands.",
-    "What is your gitHub username?",
-    "What is your email address",
+    "What command should be run to install dependencies?",
+    "What command should be run to run tests?",
+    "How can users navigate your repository and use your application?",
+    "What does the user need to know about contributing to the repo?",
     "How would you like users to reachout with questions regarding this application?"
 ];
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
 
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
 inquirer
   .prompt([
     {
       type: 'input',
-      name: 'title',
+      name: 'github',
       message: questions[0],
     },
     {
       type: 'input',
-      name: 'description',
+      name: 'email',
       message: questions[1],
     },
     {
       type: 'input',
-      name: 'installation',
+      name: 'title',
       message: questions[2],
     },
     {
       type: 'input',
-      name: 'usage',
+      name: 'description',
       message: questions[3],
     },
     {
-      type: 'select',
+      type: 'list',
       name: 'license',
       message: questions[4],
-      choices: ['MIT License'],
+      choices: ['MIT License', 'Another License'],
     },
     {
       type: 'input',
-      name: 'contribution',
+      name: 'installation',
       message: questions[5],
     },
     {
       type: 'input',
-      name: 'instructions',
+      name: 'tests',
       message: questions[6],
     },
     {
       type: 'input',
-      name: 'username',
+      name: 'usage',
       message: questions[7],
     },
     {
       type: 'input',
-      name: 'email',
+      name: 'contribution',
       message: questions[8],
     },
     {
@@ -74,21 +87,19 @@ inquirer
       message: questions[9],
     },
   ])
-  .then((answers) => {
-    // const readmeContent = generateHTML(answers);
+  .then((data) => {
+    let readmeContent = generateMarkdown(data);
 
-    // fs.writeFile('README.md', readmeContent, (err) =>
-    //   err ? console.log(err) : console.log('Successfully created README.md!')
-    // );
-    console.log(answers)
+    fs.writeFile('README.md', readmeContent, (err) =>
+      err ? console.log(err) : console.log('Successfully created README.md!')
+    );
+    console.log(data);
   });
-
-// }
+}
 
 // TODO: Create a function to initialize app
 // function init() {
-
-
+//     writeToFile;
 // }
 
 // Bonus using writeFileSync as a promise
@@ -102,4 +113,4 @@ inquirer
 //   };
 
 // Function call to initialize app
-init();
+// init();

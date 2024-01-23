@@ -29,10 +29,10 @@ function generateMarkdown(data) {
   - [Questions](#questions)
 
   ## Installation
-  To install this application:
+  ### Command to install dependencies:
   ${data.installation}
 
- 
+  
   ## Usage
   To use this application:
   ${data.usage}
@@ -47,9 +47,9 @@ function generateMarkdown(data) {
   Product contribution guidelines are as follows:
   ${data.contribution}
 
-
   ## Tests
-  ${data.instructions}
+  ### Command to run tests:
+  ${data.tests}
 
 
   ## Questions
