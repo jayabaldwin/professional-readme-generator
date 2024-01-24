@@ -55,6 +55,10 @@ THEN I am taken to the corresponding section of the README
   node index.js
   `
 
+  The functionality is as follows:
+  ![Functionality](./assets/images/screenshot.png)
+  
+
   ## License
   The application is covered under the following license: [MIT](https://opensource.org/licenses/MIT)
 
