@@ -50,7 +50,10 @@ THEN I am taken to the corresponding section of the README
   ```
 
   ## Usage
-  This repository is currently a work in progress
+  Run this application with the command:
+  `
+  node index.js
+  `
 
   ## License
   The application is covered under the following license: [MIT](https://opensource.org/licenses/MIT)
