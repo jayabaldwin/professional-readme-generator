@@ -19,11 +19,11 @@
   ## Installation
   #### Command to install dependencies:
   `
-  npm i Inquirer@8.2.4
+  node i inquirer@8.2.4
   `
 
   ## Usage
-  This repository is currently a work in progress, although it still holds the ability to generate a basic markdown file
+  This repository is currently a work in progress
 
   ## License
   The application is covered under the following license: [MIT](https://opensource.org/licenses/MIT)
